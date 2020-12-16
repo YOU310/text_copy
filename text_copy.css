@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header_container{
+  display: flex; /*親要素をフレックスボックス化（子要素の位置をいろいろいじれる）*/
+  justify-content: center; /*左右の位置（今は中央）*/
+  align-items: center; /*上下の位置（今は中央）*/
+  height: 60px;
+  width: 100%;
+  /*ヘッダーを上に固定*/
+  position: fixed; 
+  top: 0;
+  /**/
+  background-color: royalblue;
+  
+}
+
+.header_container h1{
+  font-size: 1.5rem;
+  display: inline; /*横並びにするために*/
+  margin: 0px 200px 0px 0px;
+  color: white;
+}
+
+.header_container a{
+  margin-right: 20px;
+  color: white;
+}
+
+.top{
+  margin-top: 80px; /*ヘッダーとの重なりを回避*/
+  text-align: center;
+}
+
+.search{
+  text-align: center;
+}
+
+
+input[type=search]{
+  height: 30px;
+}
+
+.main_container{
+  margin: 30px;
+  width: 100%;
+}
+.text_container{
+  text-decoration: none;
+  display: inline-block;
+  width: 30%;
+  border: solid 1px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.text_img{
+  height: 200px; /*背景に画像を入れただけだと、高さが無いと表示されない*/
+  background-image: url("/Users/you310/Desktop/yanbarutext/text_copy/IMG_3795.JPG ");
+  background-size: cover;
+  opacity: 0.6;
+  text-align: center;
+  display: flex; /*フレックスボックスにして上下左右中央寄せ*/
+  justify-content: center;
+  align-items: center;
+}
+
+.text_title{
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 30px 10px ;
+  background-color:rgba(255,255,255,0.9); /*背景色のみ透過*/
+  color: black;
+  margin: 0 5px;
+  border: solid 1px;
+  
+}
+
+button{
+  margin:10px 5%; /*これやらんとボタンがハミ出た謎*/
+  width: 90%;
+  line-height: 30px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 3px;
+}
+
+.coments{
+  margin: 10px;
+}
+
+footer{
+  background-color: royalblue;
+  color: white;
+  position: fixed;
+    bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+
+footer a{
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 10px;
+}
